@@ -1,0 +1,28 @@
+.hero-button {
+  margin-top: 2rem;
+  .btn {
+    padding: 0.75em 1em;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #292524;
+    width: 247.61px;
+    
+
+    //
+    display: flex;
+    flex-direction: row;
+    // gap: .5rem;
+    &:hover {
+    }
+    &:focus {
+      // background-color: ;
+    }
+    .btn-text {
+      color: #a8a29e;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
