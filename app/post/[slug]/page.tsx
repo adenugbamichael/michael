@@ -2,7 +2,7 @@ import { PortableText } from "@portabletext/react"
 import Image from "next/image"
 import { client } from "../../lib/sanity"
 import { Post } from "../../lib/interface"
-import { urlFor } from "../../lib/sanityImageUrL"
+import { urlFor } from "../../lib/sanityImageUrl"
 
 async function getData(slug: string) {
   const query = `*[_type == "post" && slug.current == "${slug}"][0]`

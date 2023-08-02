@@ -53,7 +53,7 @@ const About = () => {
           {/* <div className='overlay-border'></div> */}
 
           <div className='about-grid-photo-container'>
-            <Image src='/images/profile.jpg' alt='profile' fill />
+            <Image src='/profile.jpg' alt='profile' priority fill />
           </div>
           <div className='about-grid-photo-social'>
             <SocialIcons />
