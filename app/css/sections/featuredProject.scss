@@ -39,6 +39,7 @@
       list-style-type: none;
       position: relative;
       height: max-content;
+
       .underline {
         background-color: #d09e72;
         position: absolute;
@@ -55,6 +56,7 @@
         height: 100%;
         width: 1px;
         background-color: #d6d3d1;
+        color: #a8a29e;
         opacity: 0.7;
       }
       &-item {
@@ -68,14 +70,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          // color: ;
+          color: #a8a29e;
           // font-family: ;
           font-size: var(--tsm1);
         }
         &:hover {
           background-color: #292524;
           span {
-            color: #d09e72;
+            // color: #d09e72;
           }
         }
       }
@@ -88,6 +90,7 @@
     .exp-details {
       height: 40vh;
       // font-family: ;
+
       &-position {
         // color: ;
         h3 {
@@ -101,6 +104,7 @@
         // color: ;
       }
       &-list {
+        color: #a8a29e;
         list-style-type: none;
         display: flex;
         flex-direction: column;

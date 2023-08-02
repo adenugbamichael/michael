@@ -12,11 +12,9 @@ import FeaturedProject from "./sections/FeaturedProject"
 const page = () => {
   return (
     <div className='app'>
-      <main>
-        <Hero />
-        <About />
-        <FeaturedProject />
-      </main>
+      <Hero />
+      <About />
+      <FeaturedProject />
     </div>
   )
 }

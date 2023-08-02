@@ -11,16 +11,20 @@ const Hero = () => {
       {/* <h1 className="hero-title">Hi my name is </h1> */}
       <h2 className='hero-title-large'>Michael Adenugba</h2>
       <p className=' hero-title-sub'>Frontend & software developer</p>
-      <p className='hero-text'>
+      <p className='hero-text '>
         A developer specializing in TypeScript, React, and applications📲, as
         part of the team at{" "}
-        <Link href='href=//www.dexp2p.com/' target='_blank' className='link'>
-          de𝕏p2p
+        <Link
+          href='href=//www.dexp2p.com/'
+          target='_blank'
+          className='link underline'
+        >
+          Dexp2p
         </Link>
       </p>
       {/* <SocialIcons /> */}
-      <div className='hero-button' >
-        <Button  text='Welcome✨' link='' />
+      <div className='hero-button'>
+        <Button text='Welcome✨' link='' />
       </div>
     </div>
   )

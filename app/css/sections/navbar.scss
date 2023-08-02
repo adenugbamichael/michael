@@ -1,14 +1,4 @@
 nav {
-  // min-height: 60px;
-  // margin: 0 10rem;
-  // max-width: 72rem;
-  // padding-top: 1.5rem;
-  // padding-bottom: 1.5rem;
-  max-width: 72rem;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  padding-inline-start: 1.5rem;
-  padding-inline-end: 1.5rem;
   .wrapper {
     // width: 100%;
     display: flex;
@@ -34,7 +24,7 @@ nav {
         // fill: none;
         &:focus {
           outline-color: #e8cdb5;
-          outline-offset: 3px;
+          outline-offset: 1px;
           // border-radius: 0.5rem;
         }
       }
@@ -68,7 +58,7 @@ nav {
             }
             &:focus {
               outline-color: #e8cdb5;
-              outline-offset: 3px;
+              outline-offset: 1px;
               border-radius: 0.5rem;
             }
           }

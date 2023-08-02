@@ -24,7 +24,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav>
+    <nav className='max-w-3xl mx-auto px-4'>
       <div className='wrapper'>
         <div className='brand'>
           <Link href='/'>

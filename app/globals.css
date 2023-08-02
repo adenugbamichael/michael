@@ -162,11 +162,3 @@ h4 {
   color: #d6d3d1;
   vertical-align: middle;
 }
-
-.blog-container {
-  max-width: 72rem;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  padding-inline-start: 1.5rem;
-  padding-inline-end: 1.5rem;
-}
