@@ -8,6 +8,7 @@ import "./css/main.scss"
 
 import About from "./sections/About"
 import FeaturedProject from "./sections/FeaturedProject"
+import Projects from "./sections/Projects"
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <Hero />
       <About />
       <FeaturedProject />
+      <Projects />
     </div>
   )
 }

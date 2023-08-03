@@ -12,8 +12,8 @@ const Hero = () => {
       <h2 className='hero-title-large'>Michael Adenugba</h2>
       <p className=' hero-title-sub'>Frontend & software developer</p>
       <p className='hero-text '>
-        A developer specializing in TypeScript, React, and applications📲, as
-        part of the team at{" "}
+        I&apos;m a software developer specializing in TypeScript, React, and
+        applications📲, as part of a team at{" "}
         <Link
           href='href=//www.dexp2p.com/'
           target='_blank'

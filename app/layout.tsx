@@ -17,7 +17,7 @@ export default function RootLayout({
       <body suppressHydrationWarning={true}>
         <Navbar />
         {/* <Email /> */}
-        <main className='max-w-3xl mx-auto px-4'>{children}</main>
+        <main className='max-w-4xl mx-auto px-4'>{children}</main>
       </body>
     </html>
   )

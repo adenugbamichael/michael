@@ -1,5 +1,6 @@
 .about {
-  margin: 7rem 0;
+  // margin: 15rem 0;
+  margin-top: 7rem;
   .title {
     // font-family: ;
     // color: ;
@@ -35,7 +36,7 @@
         font-size: 1.125rem;
         line-height: 1.5;
         // font-weight: 500;
-        font-family: ABCFavorit-Regular;
+        font-family: "ABCFavorit-Regular";
       }
       &-list {
         display: grid;
@@ -43,10 +44,10 @@
         list-style-type: none;
         padding: 0 0 0 3rem;
         &-item {
-          font-family: ABCFavorit-Regular;
-          line-height: 1.5;
-          // font-weight: 500;
-          font-size: 1rem;
+          line-height: 1.25rem;
+          font-size: 14px;
+          // font-family: "ABCFavoritMono-Book";
+          // font-weight: 500
           // color: #d6d3d1;
           color: #a8a29e;
           position: relative;

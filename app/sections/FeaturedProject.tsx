@@ -43,9 +43,7 @@ const FeaturedProject = () => {
   return (
     <div className='experience' id=''>
       <div className='title'>
-        <h2>
-          Featured Project <Btn />
-        </h2>
+        <h2>Experience</h2>
       </div>
       <div className='container'>
         <ul className='exp-slider'>
