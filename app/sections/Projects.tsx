@@ -36,7 +36,7 @@ const Projects = () => {
       projectTech: [
         "React",
         "Typescript",
-        "tanstack-react-queryt",
+        "React-query",
         "Chakra-UI",
         "Rawg-Api ",
         "zustand",
@@ -53,11 +53,10 @@ const Projects = () => {
       projectDescription:
         "Airbnb clone with next.js 13 to handle authentications, calendars with react-date-range, pricing calculation, booking/reservation, guest and owner reservation cancellation system, advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms.",
       projectTech: [
-        "React",
         "Nextjs",
         "NextAuth",
         "Prisma",
-        "Cloudinary CDN",
+        "Cloudinary",
         "Firebase",
         "Tailwind",
         "MongoDB",
