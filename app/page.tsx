@@ -9,6 +9,7 @@ import "./css/main.scss"
 import About from "./sections/About"
 import FeaturedProject from "./sections/FeaturedProject"
 import Projects from "./sections/Projects"
+import Contact from "./sections/Contact"
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       <About />
       <FeaturedProject />
       <Projects />
+      <Contact />
     </div>
   )
 }
