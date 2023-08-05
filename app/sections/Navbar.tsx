@@ -1,7 +1,7 @@
 "use client"
 
 import "../css/sections/navbar.scss"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { SiAboutdotme } from "react-icons/si"
 import { GoProjectSymlink } from "react-icons/go"
@@ -12,6 +12,7 @@ import Logo from "../components/Logo"
 
 const Navbar = () => {
   const [active, setActive] = useState("")
+  const [navbarVisible, setNavbarVisible] = useState(false)
   const sectionLinks = [
     { name: "About", link: "/#about", icon: <SiAboutdotme /> },
     { name: "Blog", link: "/blog", icon: <FaBlog /> },
@@ -23,9 +24,17 @@ const Navbar = () => {
     },
   ]
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.pageYOffset > 100
+        ? setNavbarVisible(true)
+        : setNavbarVisible(false)
+    })
+  }, [])
+
   return (
     <nav className='max-w-4xl mx-auto px-4'>
-      <div className='wrapper'>
+      <div className={`wrapper ${navbarVisible ? "blur-nav" : ""}`}>
         <div className='brand'>
           <Link href='/'>
             <Logo />

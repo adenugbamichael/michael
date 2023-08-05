@@ -66,4 +66,15 @@ nav {
       }
     }
   }
+  .blur-nav {
+    gap: 20rem;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+    // background-color: #1c1917;
+    // box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    backdrop-filter: blur(10px);
+  }
 }

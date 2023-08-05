@@ -12,10 +12,11 @@ function Contact() {
         try my best to get back to you!
       </p>
       <div className='contact-cta'>
-        <Buttons link='mailto:adenugbamicke@gmail.com' text='Say Hello' />
+        <Buttons link='' text='Say Hello' />
       </div>
     </div>
   )
 }
 
 export default Contact
+// mailto:adenugbamicke@gmail.com
