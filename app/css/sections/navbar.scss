@@ -1,10 +1,10 @@
 nav {
   .wrapper {
-    // width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding: 0 4rem;
+    // padding: 0 2rem 0 0;
     transition: 0.3s ease-in-out;
     position: relative;
     .brand {
@@ -29,9 +29,19 @@ nav {
         }
       }
     }
+    .nav-responsive-toggle {
+      display: none;
+      color: var(--theme-color);
+      font-size: var(--tlarge2);
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s ease-in-out;
+      z-index: 15;
+    }
     .nav-items {
-      display: flex;
-      gap: 3rem;
+      // display: flex;
+      // gap: 3rem;
+      ////////////////
       // color: ;
       // font-family: ;
       // font-weight: ;
@@ -56,18 +66,53 @@ nav {
             &::before {
               // counter-increment: ;
             }
-            &:focus {
-              outline-color: #e8cdb5;
-              outline-offset: 1px;
-              border-radius: 0.5rem;
-            }
+          }
+          a:focus {
+            outline-color: #e8cdb5;
+            outline-offset: 1px;
+            border-radius: 0.5rem;
           }
         }
       }
     }
+    @media screen and (max-width: 48em) {
+      // width: 100%;
+
+      .nav-responsive-toggle {
+        display: flex;
+        z-index: 15;
+      }
+
+      .nav-items {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        width: 0%;
+        opacity: 0;
+        visibility: hidden;
+        top: 0;
+        padding: 50px 10px;
+        background-color: var(--light-navy);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        z-index: 11;
+        &-list {
+          flex-direction: column;
+        }
+      }
+
+      .nav-responsive {
+        width: min(75vw, 400px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
   }
   .blur-nav {
-    gap: 20rem;
+    // width: 100%;
+    padding: 0 2rem 0 0;
     height: 80px;
     position: fixed;
     top: 0;

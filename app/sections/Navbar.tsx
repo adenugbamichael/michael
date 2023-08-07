@@ -3,6 +3,8 @@
 import "../css/sections/navbar.scss"
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
+import { GiHamburgerMenu } from "react-icons/gi"
+import { CgClose } from "react-icons/cg"
 import { SiAboutdotme } from "react-icons/si"
 import { GoProjectSymlink } from "react-icons/go"
 import { FaBlog } from "react-icons/fa"
@@ -13,6 +15,7 @@ import Logo from "../components/Logo"
 const Navbar = () => {
   const [active, setActive] = useState("")
   const [navbarVisible, setNavbarVisible] = useState(false)
+  const [responsiveNavVisible, setResponsiveNavVisible] = useState(false)
   const sectionLinks = [
     { name: "About", link: "/#about", icon: <SiAboutdotme /> },
     { name: "Blog", link: "/blog", icon: <FaBlog /> },
@@ -26,20 +29,36 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.pageYOffset > 100
-        ? setNavbarVisible(true)
-        : setNavbarVisible(false)
+      window.scrollY > 100 ? setNavbarVisible(true) : setNavbarVisible(false)
     })
   }, [])
 
   return (
     <nav className='max-w-4xl mx-auto px-4'>
-      <div className={`wrapper ${navbarVisible ? "blur-nav" : ""}`}>
+      <div className={`wrapper max-w-4xl  ${navbarVisible ? "blur-nav" : ""}`}>
         <div className='brand'>
           <Link href='/'>
             <Logo />
           </Link>
         </div>
+        <div className='nav-responsive-toggle'>
+          {responsiveNavVisible ? (
+            <CgClose
+              onClick={(e) => {
+                e.stopPropagation()
+                setResponsiveNavVisible(false)
+              }}
+            />
+          ) : (
+            <GiHamburgerMenu
+              onClick={(e) => {
+                e.stopPropagation()
+                setResponsiveNavVisible(true)
+              }}
+            />
+          )}
+        </div>
+
         <div className='nav-items'>
           <ul className='nav-items-list'>
             {sectionLinks.map(({ name, link, icon }) => (
@@ -62,9 +81,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          {/* <div className='nav-items-button'>
-            <Button text='Resume' link='' />
-          </div> */}
         </div>
       </div>
     </nav>
