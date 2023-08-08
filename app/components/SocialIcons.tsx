@@ -35,7 +35,7 @@ const SocialIcons = () => {
     },
   ]
   return (
-    <div className='social-icons'>
+    <div className='social-icons '>
       <ul className='social-icons-list'>
         {socialLinks.map(({ name, icon, link }) => (
           <li key={name} title={name} className='social-icons-list-item'>

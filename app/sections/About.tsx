@@ -55,7 +55,7 @@ const About = () => {
           <div className='about-grid-photo-container'>
             <Image src='/profile.jpg' alt='profile' priority fill />
           </div>
-          <div className='about-grid-photo-social'>
+          <div className='about-grid-photo-social '>
             <SocialIcons />
           </div>
         </div>

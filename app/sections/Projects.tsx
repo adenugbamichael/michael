@@ -51,7 +51,7 @@ const Projects = () => {
       projectName: "Airbnb Next",
       projectLink: "https://airbnb-next-roan.vercel.app/",
       projectDescription:
-        "Airbnb clone to handle auth, calendars with react-date-range, pricing calculation, booking/reservation, guest and owner cancellation system, advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms.",
+        "Airbnb clone handle authentications, manage booking/reservation, guest and owner cancellation system, advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms.",
       projectTech: [
         "Nextjs",
         "NextAuth",

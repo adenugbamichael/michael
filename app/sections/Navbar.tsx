@@ -32,8 +32,31 @@ const Navbar = () => {
       window.scrollY > 100 ? setNavbarVisible(true) : setNavbarVisible(false)
     })
   }, [])
-  // max-w-4xl mx-auto px-4
-  // max-w-4xl
+
+  useEffect(() => {
+    const links = document.querySelectorAll(".nav-items-list-item-link")
+    links.forEach((link) => {
+      link.addEventListener("click", () => setResponsiveNavVisible(false))
+    })
+    const nav = document.querySelector(".nav-items")
+    nav?.addEventListener("click", (e) => {
+      e.stopPropagation()
+    })
+    const html = document.querySelector("html")
+    html?.addEventListener("click", (e) => {
+      setResponsiveNavVisible(false)
+    })
+  }, [])
+
+  useEffect(() => {
+    const main = document.querySelector("main")
+    if (responsiveNavVisible) {
+      main?.classList.add("blur")
+    } else {
+      main?.classList.remove("blur")
+    }
+  }, [responsiveNavVisible])
+
   return (
     <nav>
       <div className={`wrapper ${navbarVisible ? "blur-nav" : ""}`}>
