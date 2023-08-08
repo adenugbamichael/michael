@@ -32,10 +32,11 @@ const Navbar = () => {
       window.scrollY > 100 ? setNavbarVisible(true) : setNavbarVisible(false)
     })
   }, [])
-
+  // max-w-4xl mx-auto px-4
+  // max-w-4xl
   return (
-    <nav className='max-w-4xl mx-auto px-4'>
-      <div className={`wrapper max-w-4xl  ${navbarVisible ? "blur-nav" : ""}`}>
+    <nav>
+      <div className={`wrapper ${navbarVisible ? "blur-nav" : ""}`}>
         <div className='brand'>
           <Link href='/'>
             <Logo />
@@ -59,7 +60,9 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className='nav-items'>
+        <div
+          className={`${responsiveNavVisible && "nav-responsive"} nav-items`}
+        >
           <ul className='nav-items-list'>
             {sectionLinks.map(({ name, link, icon }) => (
               <li
