@@ -53,3 +53,5 @@ export default async function IndexPage() {
     </div>
   )
 }
+
+// new post
