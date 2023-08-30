@@ -3,8 +3,8 @@ import "./globals.css"
 import Navbar from "./sections/Navbar"
 
 export const metadata = {
-  title: "Michael Adenugba",
-  description: "My portfolio website built with next.js",
+  title: "Michael | Personal Portfolio",
+  description: " is a full-stack developer with 3 years of experience.",
 }
 
 export default function RootLayout({

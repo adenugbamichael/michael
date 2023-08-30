@@ -25,7 +25,8 @@ const FeaturedProject = () => {
       end: "Present",
       shortDescription: [
         "Build site landing page and UI features.",
-        "Work closely with a team that includes Frontend Developers, Backend Developers, and UI/UX Developers to brainstorm and develop new ways to create a stable, scalable solution.",
+        "Work closely with a team that includes Project Manager, Frontend Developers, Backend Developers, and UI/UX Developers to brainstorm and develop new ways to build a digital product.",
+        "Optimized codes and images to improve web performance and enhancing user experience.",
       ],
     },
     {
