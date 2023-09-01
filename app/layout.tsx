@@ -4,7 +4,7 @@ import Navbar from "./sections/Navbar"
 
 export const metadata = {
   title: "Michael | Personal Portfolio",
-  description: " is a full-stack developer with 3 years of experience.",
+  description: "Michael is a frontend developer.",
 }
 
 export default function RootLayout({

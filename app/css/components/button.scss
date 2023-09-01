@@ -4,15 +4,16 @@
     padding: 0.75em 1em;
     text-decoration: none;
     border-radius: 4px;
+    color: #a8a29e;
     background-color: #292524;
-    width: 247.61px;
-    
+    // width: 247.61px;
 
     //
     display: flex;
     flex-direction: row;
     // gap: .5rem;
     &:hover {
+      text-decoration: underline;
     }
     &:focus {
       // background-color: ;
@@ -21,7 +22,7 @@
       color: #a8a29e;
 
       &:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
       }
     }
   }

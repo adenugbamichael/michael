@@ -30,14 +30,15 @@ const FeaturedProject = () => {
       ],
     },
     {
-      name: "Startup",
+      name: "TalentAlt",
       role: "Frontend Developer",
       url: "___",
       start: "March 2021",
       end: "Present",
       shortDescription: [
-        "Develop landing page and features",
-        "I've also managed a small team that includes Frontend Developers, Backend Developers, and UI/UX Developers.",
+        "Assisting in testing of talentAlt platform 2.0.",
+        "Thinking through and contributing to the implementation of user interface.",
+        "Design support and ideation of new features.",
       ],
     },
   ]
