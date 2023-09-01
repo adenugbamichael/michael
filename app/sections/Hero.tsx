@@ -12,7 +12,7 @@ const Hero = () => {
       <h2 className='hero-title-large'>Michael Adenugba</h2>
       <p className=' hero-title-sub'>Frontend & software developer</p>
       <p className='hero-text '>
-        I&apos;m a frontend developer as part of a team at{" "}
+        I&apos;m a frontend developer, part of a team at{" "}
         <Link
           href='href=//www.dexp2p.com/'
           target='_blank'
