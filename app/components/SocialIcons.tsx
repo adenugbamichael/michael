@@ -2,6 +2,7 @@ import "../css/components/socialIcons.scss"
 import Link from "next/link"
 import React from "react"
 import { FiGithub, FiLinkedin, FiTwitter, FiFile, FiMail } from "react-icons/fi"
+import { RiTwitterXLine } from "react-icons/ri"
 
 const SocialIcons = () => {
   const socialLinks = [
@@ -19,7 +20,7 @@ const SocialIcons = () => {
 
     {
       name: "Twitter",
-      icon: <FiTwitter />,
+      icon: <RiTwitterXLine />,
       link: "https://twitter.com/MichaelAdenugba",
     },
 
