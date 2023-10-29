@@ -25,10 +25,7 @@ const Hero = () => {
       </p>
       {/* <SocialIcons /> */}
       <div className='hero-button'>
-        <Button
-          text='View full résumé'
-          link='http://localhost:3000/resume.pdf'
-        />
+        <Button text='View full résumé' link='http:/resume.pdf' />
       </div>
     </div>
   )
