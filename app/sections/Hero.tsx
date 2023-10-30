@@ -25,7 +25,10 @@ const Hero = () => {
       </p>
       {/* <SocialIcons /> */}
       <div className='hero-button'>
-        <Button text='View full résumé' link='/resume.pdf' />
+        <Button
+          text='View full résumé'
+          link='https://michael-henna.vercel.app/resume.pdf'
+        />
       </div>
     </div>
   )
